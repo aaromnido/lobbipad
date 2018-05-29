@@ -38,14 +38,16 @@
     position: absolute
     top: -0.5rem
 
-  #main-nav-mobile
+  .main-nav-mobile
     display: none
-  #main-nav-desktop
+  .main-nav-desktop
     display: inline-block
 
 @media only screen and (max-width: 850px)
-  #main-nav-mobile
+  .main-nav-mobile
     display: inline-block !important
+  .main-nav-desktop
+    display: none !important
 
 .responsive-menu-container
   $font-size: 1.3em
@@ -59,9 +61,11 @@
   padding: 2rem 1rem
   transition: all 0.6s ease-out
   box-sizing: border-box
+  .main-nav-desktop
+    display: block !important
 
   &.hidden
-    left: -150vh
+    left: -110vw
 
   .close-button
     display: flex
