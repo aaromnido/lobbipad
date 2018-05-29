@@ -19,7 +19,5 @@ $(document).ready(function(){
   $( '.close-button' ).click(function() {
     $('.responsive-menu-container').toggleClass('hidden');
   });
-
-  console.log("cargado");
 });
 
