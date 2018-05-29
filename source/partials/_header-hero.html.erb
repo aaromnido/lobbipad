@@ -1,0 +1,45 @@
+<div class="header-hero">
+  <div class="section section-header">
+
+    <div class="container">
+
+      <div class="brand">
+        <div class="company-logo">
+          <h1>
+            <% link_to '/' do %>
+              <%= image_tag 'logo-lobbipad.svg' %>
+            <% end %>
+          </h1>
+        </div>
+      </div><!-- / brand -->
+
+      <div class="nav nav-main">
+        <nav id="main-nav-desktop">
+          <%= link_to "Features", "#" %>
+          <%= link_to "Pricing", "#" %>
+          <%= link_to "Documentation", "#", :class => 'new' %>
+          <%= link_to "Log in", "#" %>
+          <%= link_to "Book online demo", "#", :class => 'button' %>
+        </nav>
+        <nav id="main-nav-mobile">
+          <span id="responsive-button"><%= image_tag 'icon-hamburguer.svg' %></span>
+        </nav>
+      </div><!-- / main-nav -->
+
+    </div>
+  </div><!-- / section-header -->
+
+  <div class="section section-hero">
+    <div class="container">
+      <div class="content">
+        <h2>Welcome your visitors in style</h2>
+        <h4><strong>Europe's #1 platform</strong> for visitor registration</h4>
+        <p>5 <span class="stars"><%= image_tag 'icon-star.svg' %><%= image_tag 'icon-star.svg' %><%= image_tag 'icon-star.svg' %><%= image_tag 'icon-star.svg' %><%= image_tag 'icon-star.svg' %></span> on Capterra</p>
+        <%= link_to "Book online demo", "#", :class => 'button' %>
+      </div><!-- / content -->
+      <figure class="picture">
+        <%= image_tag 'illustration-welcome.svg' %>
+      </figure><!-- / picture -->
+    </div>
+  </div><!-- / section-hero -->
+</div><!-- / header-hero -->

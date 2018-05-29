@@ -1,0 +1,75 @@
+@charset "utf-8"
+@import "partials/variables"
+@import "partials/layout"
+@import "partials/header"
+@import "partials/hero"
+@import "partials/features"
+@import "partials/clients"
+@import "partials/testimonials"
+@import "partials/footer"
+
+body
+  font-family: $base-font-family
+  size: $base-font-size
+  background: $white
+  background-image: url(../images/hero-bg.svg)
+  background-repeat: no-repeat
+  background-position: 35vw top
+  background-size: 70vw
+  @media only screen and (max-width: 660px)
+    background-position: 1rem 7vw
+    background-size: 120vw
+
+a
+  color: $blue
+  transition: all 0.4s ease-out
+  text-decoration: none
+  &:last-child
+    margin-right: 0
+
+  &:hover
+    color: $purple-dark
+
+p, li, ul, p small, p span
+  color: $grey
+  line-height: 1.6em
+
+h2, h3, h4, h5
+  margin: 0
+  margin-bottom: 1em
+
+h2
+  color: $purple-dark
+  font-size: 2.25rem
+
+h3
+  color: $purple-dark
+  font-weight: 600
+  font-size: 1.875rem
+
+h4
+  color: $grey
+  font-size: 1.125rem
+  font-weight: 100
+  strong
+    font-weight: 500
+
+img
+  max-width: 100%
+
+
+.button
+  background: $blue-one-up
+  padding: 1.375rem 2.375rem
+  border-radius: 200px
+  display: inline-block
+  color: $white
+  &:hover
+    background: $red
+    color: $white
+
+.t-center
+  text-align: center
+
+  @media only screen and (max-width: 768px)
+    padding: 1rem 2rem

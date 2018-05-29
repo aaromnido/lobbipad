@@ -1,0 +1,123 @@
+.section-footer
+  background: $black url(../images/footer-bg.svg) -20vw -10rem no-repeat
+  background-size: 50%
+  padding: 5rem 0 2rem 0
+
+.footer-form
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-bottom: 6rem
+  @media only screen and (max-width: 768px)
+    flex-direction: column
+
+  h2
+    color: $white
+    margin: 0 1rem 0 0
+    font-size: 1.5rem
+    font-weight: 400
+    @media only screen and (max-width: 768px)
+      text-align: center
+
+  input
+    @extend .button
+    margin: 0.5rem
+    border: 0
+    @media only screen and (max-width: 768px)
+      width: 80%
+      max-width: 80%
+
+  input[type=email],
+  input[type=email]:hover
+    width: 24%
+    max-width: 20rem
+    background: white
+    color: $black
+    @media only screen and (max-width: 768px)
+      width: 60%
+      max-width: 60%
+
+.footer-navigation
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-bottom: 3rem
+  @media only screen and (max-width: 768px)
+    flex-direction: column
+
+  a
+    color: $indigo
+
+    &:hover
+      color: lighten($indigo, 15%)
+
+  .nav-main
+    @media only screen and (max-width: 768px)
+      flex: 2
+      order: 1
+      text-align: left
+
+  .brand
+    @media only screen and (max-width: 768px)
+      flex: 2
+      order: 2
+      text-align: center
+
+  .nav-social
+    @media only screen and (max-width: 768px)
+      flex: 2
+      order: 3
+      text-align: right
+
+.footer-navigation
+  .nav-desktop,
+  .brand
+    @media only screen and (max-width: 768px)
+      margin-bottom: 2rem
+
+    a
+      @media only screen and (max-width: 600px)
+        display: block
+        font-size: 1.5rem
+        padding: 1rem 0
+        font-weight: 400
+
+.footer-copy
+  display: flex
+  align-items: center
+  justify-content: center
+  @media only screen and (max-width: 768px)
+    flex-direction: column
+
+  >*
+    margin: 0 2rem
+
+  small,
+  a
+    color: $indigo
+    font-size: 0.8rem
+    font-weight: 100
+
+  a
+    font-weight: 500
+    &:hover
+      color: lighten($indigo, 15%)
+
+  .phones
+    @media only screen and (max-width: 768px)
+      display: flex
+      flex-direction: column
+      margin: 2rem 0
+      text-align: right
+      small, a
+        font-size: 1.5rem
+        padding: 0.5rem 0
+
+
+.nav-social
+  a
+    display: inline-block
+    margin-left: 1rem
+    opacity: 0.75
+    &:hover
+      opacity: 1

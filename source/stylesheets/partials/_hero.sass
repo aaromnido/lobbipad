@@ -1,0 +1,52 @@
+.section-hero
+  padding: 0 0 5rem 0
+  @media only screen and (max-width: 660px)
+    padding-bottom: 2rem
+
+  .container
+    display: flex
+    align-items: center
+    @media only screen and (max-width: 660px)
+      flex-direction: column
+      text-align: center
+
+  .content
+    flex: 2
+    @media only screen and (max-width: 660px)
+      order: 2
+      width: 100%
+      margin-top: 10vw
+
+  h2
+    margin-bottom: 1rem
+
+  h2
+    max-width: 12em
+    @media only screen and (max-width: 660px)
+      max-width: 100em
+      font-size: 10vw
+
+  p
+    display: flex
+    margin-bottom: 2rem
+    @media only screen and (max-width: 660px)
+      justify-content: center
+
+  .stars
+    margin: 0 5px
+
+  .picture
+    flex: 3
+
+  .button
+    @media only screen and (max-width: 660px)
+      background: $red
+      position: absolute
+      top: 60vw
+      left: 49%
+      transform: translate(-50%, -50%)
+
+    @media only screen and (max-width: 420px)
+      top: 78vw
+      padding: 0.75rem 1.3rem
+      font-size: 0.8rem

@@ -1,0 +1,56 @@
+<footer class="section section-footer">
+  <div class="container">
+
+    <form action="" class="footer-form">
+      <h2>Get update about Lobbipad</h2>
+      <input type="email" placeholder="Enter your email...">
+      <input type="submit" value="Submit">
+    </form><!-- / footer-form -->
+
+    <div class="footer-navigation">
+      <div class="brand">
+        <div class="company-logo">
+          <h1>
+            <% link_to '/' do %>
+              <%= image_tag 'logo-lobbipad-footer.svg' %>
+            <% end %>
+          </h1>
+        </div>
+      </div><!-- / brand -->
+      <div class="nav nav-main">
+        <nav class="nav-desktop">
+          <%= link_to "Support", "#" %>
+          <%= link_to "Terms", "#" %>
+          <%= link_to "Privacy", "#" %>
+          <%= link_to "Security", "#" %>
+          <%= link_to "GDPR", "#", :class => 'new' %>
+          <%= link_to "contact", "#" %>
+        </nav>
+      </div><!-- / main-nav -->
+      <nav class="nav-social">
+        <% link_to '#' do %>
+          <%= image_tag 'logo-social-facebook.svg' %>
+        <% end %>
+        <% link_to '#' do %>
+          <%= image_tag 'logo-social-twitter.svg' %>
+        <% end %>
+      </nav>
+    </div><!-- / footer-navigation -->
+
+    <div class="footer-copy">
+      <div class="copy">
+        <small>© The Offix 2018</small>
+      </div>
+      <div class="phones">
+        <small class="phone">Europe <a href="tel:+3292981378">+32 9 298 13 78</a></small>
+        <small class="phone">Us <a href="tel:+15109074912">+1 510 907 49 12</a></small>
+        <small class="phone">Asia <a href="tel:+81345408927">+81 345 40 89 27</a></small>
+      </div>
+      <div class="hiring">
+          <%= link_to "We are hiring!", "#" %>
+      </div>
+    </div><!-- / footer-copy -->
+
+
+  </div>
+</footer><!-- / section-testimonials -->
